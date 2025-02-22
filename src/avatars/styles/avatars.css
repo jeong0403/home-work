@@ -1,1 +1,38 @@
 /* 여기에 스타일을 구현해 주세요 */
+.Avatar-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 100px;
+  gap: 20px;
+  width: 476px;
+  height: 275px;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.profile {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* 상태 아이콘 (기본 : 오프라인) */
+.status {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  bottom: 4px;
+  right: 4px;
+}
+
+.status.online {
+  background-color: #4cfe88;
+}
