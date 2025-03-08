@@ -69,15 +69,15 @@ body {
 .p-1 {
   color: white;
   background: image-set(
-      url("/src/practice-ui/apple/products/ipad_pro.jpeg") 1x,
-      url("/src/practice-ui/apple/products/ipad_pro_2x.jpeg") 2x
+      url("../products/ipad_pro.jpeg") 1x,
+      url("../products/ipad_pro_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 
   @media (min-width: 1024px) {
     background: image-set(
-        url("/src/practice-ui/apple/products/ipad_pro_wide.jpeg") 1x,
-        url("/src/practice-ui/apple/products/ipad_pro_wide_2x.jpeg") 2x
+        url("../products/ipad_pro_wide.jpeg") 1x,
+        url("../products/ipad_pro_wide_2x.jpeg") 2x
       )
       no-repeat center 10% / auto;
   }
@@ -86,15 +86,15 @@ body {
 /* ipad air 버튼 검정 */
 .p-2 {
   background: image-set(
-      url("/src/practice-ui/apple/products/ipad_air.jpeg") 1x,
-      url("/src/practice-ui/apple/products/ipad_air_2x.jpeg") 2x
+      url("../products/ipad_air.jpeg") 1x,
+      url("../products/ipad_air_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 
   @media (min-width: 1024px) {
     background: image-set(
-        url("/src/practice-ui/apple/products/ipad_air_wide.jpeg") 1x,
-        url("/src/practice-ui/apple/products/ipad_air_wide_2x.jpeg") 2x
+        url("../products/ipad_air_wide.jpeg") 1x,
+        url("../products/ipad_air_wide_2x.jpeg") 2x
       )
       no-repeat center 5% / auto;
   }
@@ -124,15 +124,15 @@ body {
 .p-3 {
   color: var(--white);
   background: image-set(
-      url("/src/practice-ui/apple/products/iphone15_pro.jpeg") 1x,
-      url("/src/practice-ui/apple/products/iphone15_pro_2x.jpeg") 2x
+      url("../products/iphone15_pro.jpeg") 1x,
+      url("../products/iphone15_pro_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 
   @media (min-width: 1024px) {
     background: image-set(
-        url("/src/practice-ui/apple/products/iphone15_pro_wide.jpeg") 1x,
-        url("/src/practice-ui/apple/products/iphone15_pro_wide_2x.jpeg") 2x
+        url("../products/iphone15_pro_wide.jpeg") 1x,
+        url("../products/iphone15_pro_wide_2x.jpeg") 2x
       )
       no-repeat center center / cover;
   }
@@ -141,8 +141,8 @@ body {
 /* iphone 15 버튼 검정 */
 .p-4 {
   background: image-set(
-      url("/src/practice-ui/apple/products/iphone15.jpeg") 1x,
-      url("/src/practice-ui/apple/products/iphone15_2x.jpeg") 2x
+      url("../products/iphone15.jpeg") 1x,
+      url("../products/iphone15_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 
@@ -171,8 +171,8 @@ body {
 .p-5 {
   color: var(--white);
   background: image-set(
-      url("/src/practice-ui/apple/products/apple_watch.jpeg") 1x,
-      url("/src/practice-ui/apple/products/apple_watch_2x.jpeg") 2x
+      url("../products/apple_watch.jpeg") 1x,
+      url("../products/apple_watch_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 }
@@ -180,8 +180,8 @@ body {
 /* MacBook Air 버튼 검정 */
 .p-6 {
   background: image-set(
-      url("/src/practice-ui/apple/products/macbook_air.jpeg") 1x,
-      url("/src/practice-ui/apple/products/macbook_air_2x.jpeg") 2x
+      url("../products/macbook_air.jpeg") 1x,
+      url("../products/macbook_air_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 
@@ -210,8 +210,8 @@ body {
 .p-7 {
   color: var(--white);
   background: image-set(
-      url("/src/practice-ui/apple/products/airpods_pro.jpeg") 1x,
-      url("/src/practice-ui/apple/products/airpods_pro_2x.jpeg") 2x
+      url("../products/airpods_pro.jpeg") 1x,
+      url("../products/airpods_pro_2x.jpeg") 2x
     )
     no-repeat center center / cover;
 }
