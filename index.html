@@ -4,96 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS 과제</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Noto Sans KR", sans-serif;
-        background-color: #f5f5f5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-
-      .profile-card {
-        background: white;
-        border-radius: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        width: 300px;
-        text-align: center;
-      }
-
-      .profile-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 1.5rem;
-        object-fit: cover;
-        border: 5px solid #f0f0f0;
-      }
-
-      .name {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 0.5rem;
-      }
-
-      .bio {
-        color: #666;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
-
-      .homework-links {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .homework-links a {
-        color: #555;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .homework-links a:hover {
-        color: #007bff;
-      }
-    </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="profile-card">
-      <img
-        src="./src/assets/images/manggom.png"
-        alt="망그러진곰"
-        title="망그러진곰"
-        class="profile-image"
-      />
-      <h1 class="name">이호정</h1>
-      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 이호정 입니다.</p>
-      <p>과제 결과는 링크를 선택해주세요.</p>
-      <ul class="homework-links">
-        <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
-        <li><a href="./src/md/retrospect.md">마크다운 회고</a</li>
-        <li><a href="./src/avatars/avatars.html">아바타 과제</a></li>
-        <li><a href="./src/avatars/avatars.md">아바타 회고</a></li>
-        <li><a href="./src/login/login.html">로그인 과제</a></li>
-        <li><a href="./src/login/login.md">로그인 회고</a></li>
-      </ul>
+    <!-- 배경 이모티콘 -->
+    <div class="background-effects">
+      <span class="emoji-background" style="top: 5%; left: 10%;">🌸</span>
+      <span class="emoji-background" style="top: 35%; left: 30%;">🌸</span>
+      <span class="emoji-background" style="bottom: 10%; right: 15%;">🌿</span>
+      <span class="emoji-background" style="top: 10%; right: 10%;">🍀</span>
+      <span class="emoji-background" style="bottom: 25%; left: 5%;">🧸</span>
+      <span class="emoji-background" style="bottom: 40%; right: 30%;">🧸</span>
+      <span class="emoji-background" style="bottom: 50%; right: 5%;">🐝</span>
     </div>
+  
+    <!-- 프로필 카드 -->
+  <div class="profile-card">
+  <img src="./src/assets/images/manggom.png" alt="망그러진곰" class="profile-image" />
+  <h1 class="name">이호정</h1>
+  <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 이호정입니다. <br />
+  과제 결과는 링크를 선택해주세요.</p>
+
+  <!-- 과제 & 회고 -->
+  <div class="grid-container">
+    <section class="homework-category">
+      <h2>📑 마크다운</h2>
+      <details>
+        <summary>📝 회고</summary>
+        <ul>
+          <li><a href="./src/md/retrospect.md">마크다운 회고</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>📖 과제</summary>
+        <ul>
+          <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="homework-category">
+      <h2>🎭 아바타</h2>
+      <details>
+        <summary>📝 회고</summary>
+        <ul>
+          <li><a href="./src/avatars/avatars.md">아바타 회고</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>📖 과제</summary>
+        <ul>
+          <li><a href="./src/avatars/avatars.html">아바타 과제</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="homework-category">
+      <h2>🔑 로그인</h2>
+      <details>
+        <summary>📝 회고</summary>
+        <ul>
+          <li><a href="./src/login/login.md">로그인 회고</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>📖 과제</summary>
+        <ul>
+          <li><a href="./src/login/login.html">로그인 과제</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="homework-category">
+      <h2>🍏 Apple</h2>
+      <details>
+        <summary>📝 회고</summary>
+        <ul>
+          <li><a href="./src/apple/apple.md">Apple 회고</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>📖 과제</summary>
+        <ul>
+          <li><a href="./src/apple/apple.html">Apple 과제</a></li>
+          <li><a href="./src/apple/card-component.html">Apple component</a></li>
+        </ul>
+      </details>
+    </section>
+  </div>
+</div>
   </body>
 </html>
